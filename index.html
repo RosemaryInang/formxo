@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+    <!-- Work links -->
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./fontIcon/css/fonts.css">
+    <link rel="stylesheet" href="./aos.css">
+    <script src="./aos.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img class="nav-logo" src="./media/neon-homegirl.jpg" alt="logo">
+        <nav class="nav-links">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Gallery</a>
+            <a class="link" href="#">Contact</a>
+                <a class="nav-login-btn" href="./log-in-form/index.html">
+                    Login
+                </a>
+        </nav>
+        <div id="hamburger">
+           <i class="fas fa-bars burger">
+           </i>
+        </div>
+    </header>
+
+    <main>
+        <section id="form-bg">
+            <form action="submit" id="form" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease">
+                <h2>
+                    User
+                    <span>
+                        Registration
+                    </span>
+                </h2>
+                <div>
+                    <button type="#" class="log-in-btn">
+                        <a href="./log-in-form/index.html">Log In</a>
+                    </button>
+                    <button type="submit" class="sign-up-btn">
+                        <b>
+                            Sign Up
+                        </b>
+                    </button>
+                </div>
+                <div>
+                    <input type="text" placeholder="First Name" class="text-input firstname">
+                </div>
+                <div>
+                    <!-- <label for="Name" class="form-label">
+                        Last Name:
+                        </label> -->
+                    <input type="text" placeholder="Last Name" class="text-input lastname">
+                </div>
+                <div>
+                    <input type="text" placeholder="Username" class="text-input username">
+                </div>
+                <div>
+                    <input type="email" required="email" placeholder="Email Address" class="text-input email">
+                    <div class="outer-text">
+                        We'll never share your email with anyone else.
+                    </div>
+                </div>
+                <div>
+                    <!-- <label for="password" class="form-label"></label> -->
+                    <input type="password" placeholder="Password" class="text-input password" required="password">
+                    <div class="outer-text">
+                        Your password must be 8-20
+                        characters
+                        long, contain letters and numbers, and must not contain spaces, special characters,
+                        or
+                        emoji.
+                    </div>
+                </div>
+                <div class="radio-box-btn">
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+                <div class="radio-box-btn">
+                    <input type="checkbox" required="checkbox">
+                    I accept all terms and conditions.
+                </div>
+                <button type="submit" class="sign-up">
+                    <b>
+                        Sign Up
+                    </b>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
